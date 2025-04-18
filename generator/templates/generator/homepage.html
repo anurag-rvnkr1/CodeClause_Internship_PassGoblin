@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}PassForge - Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="app-header">
+        <h1>Pass-Goblin</h1>
+        <p>Your Secure Password Intelligence Gen. Tool</p>
+    </div>
+    
+    <div class="tab-container home-container">
+        <div class="feature-grid">
+            <a href="{% url 'password_generator' %}" class="feature-card">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                </div>
+                <h3>Password Generator</h3>
+                <p>Create strong, unique passwords with customizable options</p>
+            </a>
+        </div>
+        
+        <div class="info-section">
+            <h2>Password Security Matters</h2>
+            <p>In today's digital world, strong passwords are your first line of defense against cybercriminals. PassForge helps you create and manage secure passwords to protect your online accounts.</p>
+            
+            <div class="security-tips">
+                <h3>Security Tips</h3>
+                <ul>
+                    <li>Use a unique password for each account</li>
+                    <li>Aim for at least 12 characters</li>
+                    <li>Mix uppercase, lowercase, numbers, and symbols</li>
+                    <li>Avoid using personal information</li>
+                    <li>Change important passwords regularly</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
